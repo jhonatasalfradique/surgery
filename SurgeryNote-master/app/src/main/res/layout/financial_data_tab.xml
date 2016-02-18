@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+        android:id="@+id/scrollView">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp">
+
+            <RelativeLayout
+                style="@style/dataLayout"
+                android:id="@+id/healthInsuranceLayout">
+
+                <TextView
+                    style="@style/dataTextView"
+                    android:text="Health Insurance:"
+                    android:id="@+id/healthInsuranceTextView"/>
+
+                <EditText
+                    style="@style/dataEditText"
+                    android:hint="Health Insurance"
+                    android:textColorHint="@color/hint_color"
+                    android:layout_below="@+id/healthInsuranceTextView"
+                    android:id="@+id/healthInsuranceEditText"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                style="@style/dataLayout"
+                android:layout_below="@+id/healthInsuranceLayout"
+                android:id="@+id/procedureCodeLayout">
+
+                <TextView
+                    style="@style/dataTextView"
+                    android:text="Procedure Code:"
+                    android:id="@+id/procedureCodeTextView"/>
+
+                <EditText
+                    style="@style/dataEditText"
+                    android:hint="Procedure Code"
+                    android:textColorHint="@color/hint_color"
+                    android:layout_below="@+id/procedureCodeTextView"
+                    android:id="@+id/procedureCodeEditText"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                style="@style/dataLayout"
+                android:layout_below="@+id/procedureCodeLayout"
+                android:id="@+id/mainSurgeryValueLayout">
+
+                <TextView
+                    style="@style/dataTextView"
+                    android:text="Main Surgery Value:"
+                    android:id="@+id/mainSurgeryValueTextView"/>
+
+                <EditText
+                    style="@style/dataEditText"
+                    android:hint="Main Surgery Value"
+                    android:textColorHint="@color/hint_color"
+                    android:inputType="numberDecimal"
+                    android:layout_below="@+id/mainSurgeryValueTextView"
+                    android:id="@+id/mainSurgeryValueEditText"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                style="@style/dataLayout"
+                android:layout_below="@+id/mainSurgeryValueLayout"
+                android:id="@+id/firstAssistantValueLayout">
+
+                <TextView
+                    style="@style/dataTextView"
+                    android:text="First Assistant Value:"
+                    android:id="@+id/firstAssistantValueTextView"/>
+
+                <EditText
+                    style="@style/dataEditText"
+                    android:hint="First Assistant Value"
+                    android:textColorHint="@color/hint_color"
+                    android:inputType="numberDecimal"
+                    android:layout_below="@id/firstAssistantValueTextView"
+                    android:id="@+id/firstAssistantValueEditText"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                style="@style/dataLayout"
+                android:layout_below="@+id/firstAssistantValueLayout"
+                android:id="@+id/secondAssistantValueLayout">
+
+                <TextView
+                    style="@style/dataTextView"
+                    android:text="Second Assisntant Value:"
+                    android:id="@+id/secondAssistantValueTextView"/>
+
+                <EditText
+                    style="@style/dataEditText"
+                    android:hint="Second Assistant Value"
+                    android:textColorHint="@color/hint_color"
+                    android:inputType="numberDecimal"
+                    android:layout_below="@+id/secondAssistantValueTextView"
+                    android:id="@+id/secondAssistantValueEditText"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                style="@style/dataLayout"
+                android:layout_below="@+id/secondAssistantValueLayout"
+                android:id="@+id/anesthesiologistValueLayout">
+
+                <TextView
+                    style="@style/dataTextView"
+                    android:text="Anesthesiologist Value:"
+                    android:id="@+id/anesthesiologistValueTextView"/>
+
+                <EditText
+                    style="@style/dataEditText"
+                    android:hint="Anesthesiologist Value"
+                    android:textColorHint="@color/hint_color"
+                    android:inputType="numberDecimal"
+                    android:layout_below="@+id/anesthesiologistValueTextView"
+                    android:id="@+id/anesthesiologistValueEditText"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                style="@style/dataLayout"
+                android:layout_below="@+id/anesthesiologistValueLayout"
+                android:id="@+id/instrumentationTechnicianValueLayout">
+
+                <TextView
+                    style="@style/dataTextView"
+                    android:text="Instrumentation Technician Value:"
+                    android:id="@+id/instrumentationtechnicianValueTextView"/>
+
+                <EditText
+                    style="@style/dataEditText"
+                    android:hint="Instrumentation Technician Value"
+                    android:textColorHint="@color/hint_color"
+                    android:inputType="numberDecimal"
+                    android:layout_below="@+id/instrumentationtechnicianValueTextView"
+                    android:id="@+id/instrumentationTechnicianValueEditText"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                style="@style/dataLayout"
+                android:layout_below="@+id/instrumentationTechnicianValueLayout"
+                android:id="@+id/amountLayout">
+
+                <TextView
+                    style="@style/dataTextView"
+                    android:text="Payment Situation:"
+                    android:id="@+id/paymentSituationTextView"/>
+
+                <Spinner
+                    style="@style/dataSpinner"
+                    android:prompt="@string/amount_spinner_title"
+                    android:layout_below="@id/paymentSituationTextView"
+                    android:id="@+id/amountSpinner"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                style="@style/dataLayout"
+                android:layout_below="@+id/amountLayout"
+                android:id="@+id/paydayLayout">
+
+                <TextView
+                    style="@style/dataTextView"
+                    android:text="Payday*:"
+                    android:id="@+id/paydayTextView"/>
+
+                <EditText
+                    style="@style/datePickerEditText"
+                    android:hint="Payday"
+                    android:textColorHint="@color/hint_color"
+                    android:layout_below="@+id/paydayTextView"
+                    android:id="@+id/paydayEditText"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                style="@style/dataLayout"
+                android:layout_marginBottom="30dp"
+                android:layout_below="@+id/paydayLayout"
+                android:id="@+id/paymentForecastLayout">
+
+                <TextView
+                    style="@style/dataTextView"
+                    android:text="Payment Forecast*:"
+                    android:id="@+id/paymentForecastTextView"/>
+
+                <EditText
+                    style="@style/datePickerEditText"
+                    android:hint="Payment Forecast"
+                    android:textColorHint="@color/hint_color"
+                    android:layout_below="@id/paymentForecastTextView"
+                    android:id="@+id/paymentForecastEditText"/>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</LinearLayout>

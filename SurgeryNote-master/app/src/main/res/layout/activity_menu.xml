@@ -1,0 +1,105 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context="fluxoconsultoria.ufrj.br.surgerynote.MenuActivity"
+                android:background="@color/background_color">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/menuButtonLayout">
+
+        <Button
+            style="@style/generalButton"
+            android:text="@string/menu"
+            android:id="@+id/menuButton"/>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fillViewport="true"
+        android:layout_below="@+id/menuButtonLayout"
+        android:id="@+id/scrollView" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                style="@style/menuButton"
+                android:text="@string/profile"
+                android:id="@+id/profileButton"/>
+
+            <ImageView
+                style="@style/menuImage"
+                android:src="@drawable/profile"
+                android:id="@+id/profileImage"/>
+
+            <Button
+                style="@style/menuButton"
+                android:text="@string/surgeries"
+                android:layout_below="@+id/profileButton"
+                android:id="@+id/surgeriesButton"/>
+
+            <ImageView
+                style="@style/menuImage"
+                android:layout_below="@+id/profileButton"
+                android:src="@drawable/surgeries"
+                android:id="@+id/surgeriesImage"/>
+
+            <Button
+                style="@style/menuButton"
+                android:text="@string/new_surgery"
+                android:layout_below="@+id/surgeriesButton"
+                android:id="@+id/newSurgeryButton"/>
+
+            <ImageView
+                style="@style/menuImage"
+                android:layout_below="@+id/surgeriesButton"
+                android:src="@drawable/new_surgery"
+                android:id="@+id/newSurgeryImage"/>
+
+            <Button
+                style="@style/menuButton"
+                android:text="@string/media"
+                android:layout_below="@+id/newSurgeryButton"
+                android:id="@+id/mediaButton"/>
+
+            <ImageView
+                style="@style/menuImage"
+                android:layout_below="@+id/newSurgeryButton"
+                android:src="@drawable/media"
+                android:id="@+id/mediaImage"/>
+
+            <Button
+                style="@style/menuButton"
+                android:text="@string/calendar"
+                android:layout_below="@+id/mediaButton"
+                android:id="@+id/calendarButton"/>
+
+            <ImageView
+                style="@style/menuImage"
+                android:layout_below="@+id/mediaButton"
+                android:src="@drawable/calendar"
+                android:id="@+id/calendarImage"/>
+
+            <Button
+                style="@style/menuButton"
+                android:text="@string/upload"
+                android:layout_below="@+id/calendarButton"
+                android:id="@+id/uploadButton"/>
+
+            <ImageView
+                style="@style/menuImage"
+                android:layout_below="@+id/calendarButton"
+                android:src="@drawable/upload"
+                android:id="@+id/uploadImage"/>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

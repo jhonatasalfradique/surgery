@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+        android:id="@+id/scrollView" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp">
+
+            <RelativeLayout
+                style="@style/dataLayout"
+                android:id="@+id/surgicalProcedureLayout">
+
+                <TextView
+                    style="@style/dataTextView"
+                    android:text="Surgical Procedure:"
+                    android:id="@+id/surgicalProcedureTextView"/>
+
+                <EditText
+                    style="@style/dataEditText"
+                    android:hint="Surgical Procedure"
+                    android:textColorHint="@color/hint_color"
+                    android:layout_below="@id/surgicalProcedureTextView"
+                    android:id="@+id/surgicalProcedureEditText"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                style="@style/dataLayout"
+                android:layout_below="@id/surgicalProcedureLayout"
+                android:id="@+id/mainSurgeryLayout">
+
+                <TextView
+                    style="@style/dataTextView"
+                    android:text="Main Surgeon:"
+                    android:id="@+id/mainSurgeonTextView"/>
+
+                <EditText
+                    style="@style/dataEditText"
+                    android:hint="Main Surgeon"
+                    android:textColorHint="@color/hint_color"
+                    android:layout_below="@id/mainSurgeonTextView"
+                    android:id="@+id/mainSurgeryEditText"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                style="@style/dataLayout"
+                android:layout_below="@+id/mainSurgeryLayout"
+                android:id="@+id/firstAssistantLayout">
+
+                <TextView
+                    style="@style/dataTextView"
+                    android:text="First Assistant:"
+                    android:id="@+id/firstAssistantTextView"/>
+
+                <EditText
+                    style="@style/dataEditText"
+                    android:hint="First Assistant"
+                    android:textColorHint="@color/hint_color"
+                    android:layout_below="@+id/firstAssistantTextView"
+                    android:id="@+id/firstAssistantEditText"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                style="@style/dataLayout"
+                android:layout_below="@+id/firstAssistantLayout"
+                android:id="@+id/secondAssistantLayout">
+
+                <TextView
+                    style="@style/dataTextView"
+                    android:text="Second Assistant:"
+                    android:id="@+id/secondAssistantTextView"/>
+
+                <EditText
+                    style="@style/dataEditText"
+                    android:hint="Second Assistant"
+                    android:textColorHint="@color/hint_color"
+                    android:layout_below="@+id/secondAssistantTextView"
+                    android:id="@+id/secondAssistantEditText"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                style="@style/dataLayout"
+                android:layout_below="@+id/secondAssistantLayout"
+                android:id="@+id/anesthesiologistLayout">
+
+                <TextView
+                    style="@style/dataTextView"
+                    android:text="Anesthesiologist:"
+                    android:id="@+id/anesthesiologistTextView"/>
+
+                <EditText
+                    style="@style/dataEditText"
+                    android:hint="Anesthesiologist"
+                    android:textColorHint="@color/hint_color"
+                    android:layout_below="@+id/anesthesiologistTextView"
+                    android:id="@+id/anesthesiologistEditText"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                style="@style/dataLayout"
+                android:layout_below="@+id/anesthesiologistLayout"
+                android:id="@+id/instrumentationTechnicianLayout">
+
+                <TextView
+                    style="@style/dataTextView"
+                    android:text="Instrumentation Technician:"
+                    android:id="@+id/instrumentationTechnicianTextView"/>
+
+                <EditText
+                    style="@style/dataEditText"
+                    android:hint="Instrumentation Technician"
+                    android:textColorHint="@color/hint_color"
+                    android:layout_below="@+id/instrumentationTechnicianTextView"
+                    android:id="@+id/instrumentationTechnicianEditText"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                style="@style/dataLayout"
+                android:layout_below="@+id/instrumentationTechnicianLayout"
+                android:id="@+id/surgicalEquipmentCompanyLayout">
+
+                <TextView
+                    style="@style/dataTextView"
+                    android:text="Surgical Equipment Company:"
+                    android:id="@+id/surgicalEquipmentCompanyTextView"/>
+
+                <EditText
+                    style="@style/dataEditText"
+                    android:hint="Surgical Equipment Company"
+                    android:textColorHint="@color/hint_color"
+                    android:layout_below="@+id/surgicalEquipmentCompanyTextView"
+                    android:id="@+id/surgicalEquipmentCompanyEditText"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                style="@style/dataLayout"
+                android:layout_below="@+id/surgicalEquipmentCompanyLayout"
+                android:id="@+id/surgicalEquipmentLayout">
+
+                <TextView
+                    style="@style/dataTextView"
+                    android:text="Surgical Equipment:"
+                    android:id="@+id/surgicalEquipmentTextView"/>
+
+                <EditText
+                    style="@style/dataEditText"
+                    android:hint="Surgical Equipment"
+                    android:textColorHint="@color/hint_color"
+                    android:layout_below="@+id/surgicalEquipmentTextView"
+                    android:id="@+id/surgicalEquipmentEditText"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                style="@style/dataLayout"
+                android:layout_below="@+id/surgicalEquipmentLayout"
+                android:id="@+id/revaluationDateLayout">
+
+                <TextView
+                    style="@style/dataTextView"
+                    android:text="Revaluation Date*:"
+                    android:id="@+id/revalutationDateTextView"/>
+
+                <EditText
+                    style="@style/datePickerEditText"
+                    android:hint="Revaluation Date"
+                    android:textColorHint="@color/hint_color"
+                    android:layout_below="@+id/revalutationDateTextView"
+                    android:id="@+id/revaluationDateEditText"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                style="@style/dataLayout"
+                android:layout_marginBottom="30dp"
+                android:layout_below="@+id/revaluationDateLayout"
+                android:id="@+id/observationLayout">
+
+                <TextView
+                    style="@style/dataTextView"
+                    android:text="Observation:"
+                    android:id="@+id/observationTextView"/>
+
+                <EditText
+                    style="@style/dataEditText"
+                    android:hint="Observation"
+                    android:textColorHint="@color/hint_color"
+                    android:layout_below="@+id/observationTextView"
+                    android:id="@+id/observationEditText"/>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</LinearLayout>

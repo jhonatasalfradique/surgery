@@ -1,0 +1,96 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context="fluxoconsultoria.ufrj.br.surgerynote.ProfileActivity"
+                android:background="@color/background_color" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/menuButtonLayout">
+
+        <Button
+            style="@style/generalButton"
+            android:text="@string/menu"
+            android:id="@+id/menuButton"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/menuButtonLayout"
+        android:background="@color/menu_button">
+
+        <TabHost
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/addMediaButton"
+            android:id="@+id/newSurgeryTabHost">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical">
+
+                <TabWidget
+                    android:id="@android:id/tabs"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/background_color">
+                </TabWidget>
+
+                <FrameLayout
+                    android:id="@android:id/tabcontent"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+
+                    <include
+                        android:id="@+id/mainInformationTab"
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent"
+                        layout="@layout/main_information_tab">
+                    </include>
+
+                    <include
+                        android:id="@+id/surgeryInformationTab"
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent"
+                        layout="@layout/surgery_information_tab">
+                    </include>
+
+                    <include
+                        android:id="@+id/financialDataTab"
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent"
+                        layout="@layout/financial_data_tab">
+                    </include>
+
+                </FrameLayout>
+
+            </LinearLayout>
+
+        </TabHost>
+
+        <Button style="@style/generalButton"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginStart="40dp"
+                android:layout_alignParentBottom="true"
+                android:text="@string/add_media"
+                android:id="@+id/addMediaButton"/>
+
+        <Button style="@style/generalButton"
+                android:layout_marginBottom="20dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginEnd="40dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:text="@string/save"
+                android:id="@+id/saveSurgeryButton"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

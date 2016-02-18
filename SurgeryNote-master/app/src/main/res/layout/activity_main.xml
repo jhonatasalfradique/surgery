@@ -1,0 +1,52 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context=".MainActivity"
+                android:background="@color/background_color">
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:src="@drawable/tela_de_abertura"/>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:background="@color/white">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:gravity="center"
+            android:textSize="32sp"
+            android:textColor="@color/light_blue"
+            android:text="Welcome to"
+            android:id="@+id/upperTextView"/>
+
+        <TextView
+            android:layout_below="@+id/upperTextView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:gravity="center"
+            android:textSize="40sp"
+            android:textColor="@color/black"
+            android:text="Surgery Note"
+            android:id="@+id/lowerTextView"/>
+
+        <Button
+            style="@style/generalButton"
+            android:layout_marginTop="15dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/lowerTextView"
+            android:text="@string/enter"
+            android:id="@+id/enterButton"/>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

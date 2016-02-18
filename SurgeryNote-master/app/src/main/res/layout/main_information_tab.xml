@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+        android:id="@+id/scrollView" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp">
+
+            <RelativeLayout
+                style="@style/dataLayout"
+                android:id="@+id/pacientNameLayout">
+
+                <TextView
+                    style="@style/dataTextView"
+                    android:text="Pacient Name*:"
+                    android:id="@+id/pacientNameTextView"/>
+
+                <EditText
+                    style="@style/dataEditText"
+                    android:hint="Pacient Name"
+                    android:textColorHint="@color/hint_color"
+                    android:layout_below="@+id/pacientNameTextView"
+                    android:id="@+id/pacientNameEditText"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                style="@style/dataLayout"
+                android:layout_below="@+id/pacientNameLayout"
+                android:id="@+id/pacientBirthLayout">
+
+                <TextView
+                    style="@style/dataTextView"
+                    android:text="Pacient Birth*:"
+                    android:id="@+id/pacientBirthTextView"/>
+
+                <EditText
+                    style="@style/datePickerEditText"
+                    android:hint="Pacient Birth"
+                    android:textColorHint="@color/hint_color"
+                    android:layout_below="@+id/pacientBirthTextView"
+                    android:id="@+id/pacientBirthEditText"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                style="@style/dataLayout"
+                android:layout_below="@+id/pacientBirthLayout"
+                android:id="@+id/pacientGenderLayout">
+
+                <TextView
+                    style="@style/dataTextView"
+                    android:text="Pacient Gender:"
+                    android:id="@+id/pacientGenderTextView"/>
+
+                <Spinner
+                    style="@style/dataSpinner"
+                    android:prompt="@string/gender_spinner_title"
+                    android:layout_below="@+id/pacientGenderTextView"
+                    android:id="@+id/pacientGenderSpinner"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                style="@style/dataLayout"
+                android:layout_below="@+id/pacientGenderLayout"
+                android:id="@+id/dateLayout">
+
+                <TextView
+                    style="@style/dataTextView"
+                    android:text="Date*:"
+                    android:id="@+id/dateTextView"/>
+
+                <EditText
+                    style="@style/datePickerEditText"
+                    android:hint="Date"
+                    android:textColorHint="@color/hint_color"
+                    android:layout_below="@+id/dateTextView"
+                    android:id="@+id/dateEditText"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                style="@style/dataLayout"
+                android:layout_below="@+id/dateLayout"
+                android:id="@+id/medicalRecordLayout">
+
+                <TextView
+                    style="@style/dataTextView"
+                    android:text="Medical Record:"
+                    android:id="@+id/medicalRecordTextView"/>
+
+                <EditText
+                    style="@style/dataEditText"
+                    android:hint="Medical Record"
+                    android:textColorHint="@color/hint_color"
+                    android:layout_below="@+id/medicalRecordTextView"
+                    android:id="@+id/medicalRecordEditText"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                style="@style/dataLayout"
+                android:layout_below="@+id/medicalRecordLayout"
+                android:id="@+id/hospitalLayout">
+
+                <TextView
+                    style="@style/dataTextView"
+                    android:text="Hospital:"
+                    android:id="@+id/hospitalTextView"/>
+
+                <EditText
+                    style="@style/dataEditText"
+                    android:hint="Hospital"
+                    android:textColorHint="@color/hint_color"
+                    android:layout_below="@+id/hospitalTextView"
+                    android:id="@+id/hospitalEditText"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                style="@style/dataLayout"
+                android:layout_marginBottom="30dp"
+                android:layout_below="@+id/hospitalLayout"
+                android:id="@+id/diagnosisLayout">
+
+                <TextView
+                    style="@style/dataTextView"
+                    android:text="Diagnosis*:"
+                    android:id="@+id/diagnosisTextView"/>
+
+                <EditText
+                    style="@style/dataEditText"
+                    android:hint="Diagnosis"
+                    android:textColorHint="@color/hint_color"
+                    android:layout_below="@+id/diagnosisTextView"
+                    android:id="@+id/diagnosisEditText"/>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</LinearLayout>

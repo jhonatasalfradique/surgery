@@ -1,0 +1,100 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context="fluxoconsultoria.ufrj.br.surgerynote.ProfileActivity"
+                android:background="@color/background_color">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/menuButtonLayout">
+
+        <Button
+            style="@style/generalButton"
+            android:text="@string/menu"
+            android:id="@+id/menuButton"/>
+
+        <EditText
+            style="@style/dataEditText"
+            android:layout_marginLeft="130dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:paddingRight="0dp"
+            android:drawableRight="@android:drawable/ic_menu_search"
+            android:id="@+id/searchEditText"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/menuButtonLayout"
+        android:background="@color/menu_button">
+
+        <TabHost
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/saveSurgeryButton"
+            android:layout_alignParentTop="true"
+            android:id="@+id/newSurgeryTabHost">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical">
+
+                <TabWidget
+                    android:id="@android:id/tabs"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/background_color">
+                </TabWidget>
+
+                <FrameLayout
+                    android:id="@android:id/tabcontent"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+
+                    <include
+                        android:id="@+id/alphabeticalOrderTab"
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent"
+                        layout="@layout/alphabetical_order_tab">
+                    </include>
+
+                    <include
+                        android:id="@+id/chronologicalOrderTab"
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent"
+                        layout="@layout/chronological_order_tab">
+                    </include>
+
+                </FrameLayout>
+
+            </LinearLayout>
+
+        </TabHost>
+
+        <Button
+            style="@style/generalButton"
+            android:layout_marginBottom="20dp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:visibility="invisible"
+            android:text="@string/upload"
+            android:id="@+id/uploadButton"/>
+
+        <Button
+            style="@style/generalButton"
+            android:layout_marginBottom="20dp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:visibility="invisible"
+            android:text="@string/show_media"
+            android:id="@+id/showMediaButton"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

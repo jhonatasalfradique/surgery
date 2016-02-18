@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="horizontal"
+              android:padding="5sp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="5dp">
+
+        <TextView android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:textColor="@color/white"
+                  android:id="@+id/pacientNameTextView"/>
+
+        <TextView android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:textColor="@color/white"
+                  android:layout_below="@+id/pacientNameTextView"
+                  android:id="@+id/dateTextView"/>
+
+        <TextView android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:textColor="@color/white"
+                  android:layout_below="@+id/dateTextView"
+                  android:id="@+id/diagnosticTextView"/>
+
+    </RelativeLayout>
+
+
+    <ImageView android:layout_width="wrap_content"
+               android:layout_height="match_parent"
+               android:layout_alignParentRight="true"
+               android:layout_centerVertical="true"
+               android:id="@+id/iconImageView"/>
+
+</RelativeLayout>

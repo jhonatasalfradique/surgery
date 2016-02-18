@@ -1,0 +1,236 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context="fluxoconsultoria.ufrj.br.surgerynote.ProfileActivity"
+                android:background="@color/background_color">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/menuButtonLayout">
+
+        <Button
+            style="@style/generalButton"
+            android:text="@string/menu"
+            android:id="@+id/menuButton"/>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+        android:layout_below="@+id/menuButtonLayout"
+        android:id="@+id/scrollView" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="@color/menu_button">
+
+            <RelativeLayout
+                style="@style/dataLayout"
+                android:id="@+id/nameLayout">
+
+                <TextView
+                    style="@style/dataTextView"
+                    android:text="Name:"
+                    android:id="@+id/nameTextView"/>
+
+                <EditText
+                    style="@style/dataEditText"
+                    android:hint="Name"
+                    android:textColorHint="@color/hint_color"
+                    android:layout_below="@+id/nameTextView"
+                    android:id="@+id/nameEditText"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                style="@style/dataLayout"
+                android:layout_below="@+id/nameLayout"
+                android:id="@+id/lastnameLayout">
+
+                <TextView
+                    style="@style/dataTextView"
+                    android:text="Last Name:"
+                    android:id="@+id/lastNameTextView"/>
+
+                <EditText
+                    style="@style/dataEditText"
+                    android:hint="Last Name"
+                    android:textColorHint="@color/hint_color"
+                    android:layout_below="@+id/lastNameTextView"
+                    android:id="@+id/lastnameEditText"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                style="@style/dataLayout"
+                android:layout_below="@+id/lastnameLayout"
+                android:id="@+id/birthLayout">
+
+                <TextView
+                    style="@style/dataTextView"
+                    android:text="Birth:"
+                    android:id="@+id/bithTextView"/>
+
+                <EditText
+                    style="@style/datePickerEditText"
+                    android:hint="Birth"
+                    android:textColorHint="@color/hint_color"
+                    android:layout_below="@+id/bithTextView"
+                    android:id="@+id/birthDatePickerEditText"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                style="@style/dataLayout"
+                android:layout_below="@+id/birthLayout"
+                android:id="@+id/genderLayout">
+
+                <TextView
+                    style="@style/dataTextView"
+                    android:text="Gender:"
+                    android:id="@+id/genderTextView"/>
+
+                <Spinner
+                    style="@style/dataSpinner"
+                    android:prompt="@string/gender_spinner_title"
+                    android:layout_below="@+id/genderTextView"
+                    android:id="@+id/genderSpinner"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                style="@style/dataLayout"
+                android:layout_below="@+id/genderLayout"
+                android:id="@+id/countryLayout">
+
+                <TextView
+                    style="@style/dataTextView"
+                    android:text="Country:"
+                    android:id="@+id/countryTextView"/>
+
+                <Spinner
+                    style="@style/dataSpinner"
+                    android:prompt="@string/country_spinner_title"
+                    android:layout_below="@+id/countryTextView"
+                    android:id="@+id/countrySpinner"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                style="@style/dataLayout"
+                android:layout_below="@+id/countryLayout"
+                android:id="@+id/stateLayout">
+
+                <TextView
+                    style="@style/dataTextView"
+                    android:text="State:"
+                    android:id="@+id/stateTextView"/>
+
+                <EditText
+                    style="@style/dataEditText"
+                    android:hint="State"
+                    android:textColorHint="@color/hint_color"
+                    android:layout_below="@+id/stateTextView"
+                    android:id="@+id/stateEditText"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                style="@style/dataLayout"
+                android:layout_below="@+id/stateLayout"
+                android:id="@+id/cityLayout">
+
+                <TextView
+                    style="@style/dataTextView"
+                    android:text="City:"
+                    android:id="@+id/cityTextView"/>
+
+                <EditText
+                    style="@style/dataEditText"
+                    android:hint="City"
+                    android:textColorHint="@color/hint_color"
+                    android:layout_below="@+id/cityTextView"
+                    android:id="@+id/cityEditText"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                style="@style/dataLayout"
+                android:layout_below="@+id/cityLayout"
+                android:id="@+id/emailLayout">
+
+                <TextView
+                    style="@style/dataTextView"
+                    android:text="E-mail:"
+                    android:id="@+id/emailTextView"/>
+
+                <EditText
+                    style="@style/dataEditText"
+                    android:hint="E-mail"
+                    android:textColorHint="@color/hint_color"
+                    android:inputType="textEmailAddress"
+                    android:layout_below="@+id/emailTextView"
+                    android:id="@+id/emailEditText"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                style="@style/dataLayout"
+                android:layout_below="@+id/emailLayout"
+                android:id="@+id/specialtyLayout">
+
+                <TextView
+                    style="@style/dataTextView"
+                    android:text="Specialty:"
+                    android:id="@+id/specialtyTextView"/>
+
+                <EditText
+                    style="@style/dataEditText"
+                    android:hint="Specialty"
+                    android:textColorHint="@color/hint_color"
+                    android:layout_below="@+id/specialtyTextView"
+                    android:id="@+id/specialtyEditText"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                style="@style/dataLayout"
+                android:layout_below="@+id/specialtyLayout"
+                android:id="@+id/professionalIdLayout">
+
+                <TextView
+                    style="@style/dataTextView"
+                    android:text="Professional ID:"
+                    android:id="@+id/professionalIdTextView"/>
+
+                <EditText
+                    style="@style/dataEditText"
+                    android:hint="Professional ID"
+                    android:textColorHint="@color/hint_color"
+                    android:inputType="number"
+                    android:layout_below="@+id/professionalIdTextView"
+                    android:id="@+id/professionalIdEditText"/>
+
+            </RelativeLayout>
+
+            <Button
+                style="@style/generalButton"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="70dp"
+                android:layout_centerHorizontal="true"
+                android:text="@string/save"
+                android:layout_below="@+id/professionalIdLayout"
+                android:id="@+id/saveProfileButton"/>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
