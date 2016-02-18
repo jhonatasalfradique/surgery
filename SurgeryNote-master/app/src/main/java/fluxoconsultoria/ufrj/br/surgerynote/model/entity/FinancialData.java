@@ -145,7 +145,10 @@ public class FinancialData extends Object
 
     public String getAmount()
     {
+        if (amount != null)
         return amount;
+
+        else return "";
     }
 
     public void setAmount(String amount) throws InvalidDataException
