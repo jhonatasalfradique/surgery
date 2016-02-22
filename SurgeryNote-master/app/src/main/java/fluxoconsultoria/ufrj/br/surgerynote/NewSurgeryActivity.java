@@ -72,7 +72,7 @@ public class NewSurgeryActivity extends ActionBarActivity {
 
     private String pacientName, pacientGender, medicalRecord, hospital, diagnosis, surgicalProcedure, mainSurgery, firstAssistant, secondAssistant,
             anesthesiologist, instrumentationTechnician, surgicalEquipmentCompany, surgicalEquipment, observation, healthInsurance,
-            procedureCode, amount;
+            procedureCode, amount = "";
     private Date pacientBirth, date, revaluationDate, payday, paymentForecast;
     private float mainSurgeryValue, firstAssistantValue, secondAssistantValue, anesthesiologistValue, instrumentationTechnicianValue;
 
